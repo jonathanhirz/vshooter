@@ -1,0 +1,44 @@
+{
+  luxe:{
+    window: {
+      width:960,
+      height:640,
+      title:'vshooter',
+      fullscreen:false,
+      resizable:true,
+      if : {
+        ios : {
+          borderless:true
+        },
+        "!ios": {
+          borderless:false
+        }
+      }
+    }
+  },
+
+  project : {
+    name : 'vshooter',
+    version : '0.0.1',
+    author : 'Jonathan Hirz',
+
+    app : {
+      name : 'vshooter',
+      package : 'com.jonathanhirz.vshooter',
+      main : 'Main',
+        mobile : {
+          orientation : 'portrait'
+        },
+    },
+
+    build : {
+      dependencies : {
+        luxe : '*',
+      }
+    },
+
+    files : {
+      assets : 'assets/'
+    }
+  }
+}
